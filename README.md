@@ -1,18 +1,22 @@
-## Getting Started
+# Tortoise and Hare Race Simulation
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This Java program simulates the classic race between the Tortoise and the Hare.  
+Both animals move along a 70-square race track using random number generation.
 
-## Folder Structure
+## How It Works
+- The race track has 70 positions.
+- Both animals start at position 1.
+- Each tick, a random number (1–10) determines their movement:
+  - Tortoise: fast plod (+3), slip (−6), slow plod (+1)
+  - Hare: sleep (0), big hop (+9), big slip (−12), small hop (+1), small slip (−2)
+- If they land on the same square, the program prints "OUCH".
+- The race ends when either reaches position 70.
 
-The workspace contains two folders by default, where:
+## Output
+The program prints the track each tick, showing the positions of the Tortoise (T) and the Hare (H), or “OUCH” when they collide.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Requirements
+- Java 8 or higher
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Author
+A simple project created for practicing loops, arrays, and random number simulation in Java.
